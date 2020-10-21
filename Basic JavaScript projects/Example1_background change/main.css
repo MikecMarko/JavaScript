@@ -1,0 +1,25 @@
+body{
+    /*min height presents percentage of the screen*/
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttoncolor{
+    /*first is for vertical and second for horizontal*/
+    padding: 0.25rem 0.5rem;
+    /* # color code */
+    border: 3px solid #fefefe;
+    border-radius: 7px;
+    color: #fefefe;
+    /*background all black but 0,6 opacity in rgba presentated color*/
+    background: rgba(0,0,0,0.6);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttoncolor:hover{
+    background: rgb(0,0,0);
+}
