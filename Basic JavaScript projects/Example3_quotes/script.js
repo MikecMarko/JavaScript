@@ -1,24 +1,37 @@
+const simpleQuotes = [
 
-
-const hexnumbers=[0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
-const hexbutton = document.querySelector('.buttoncolor');
-const body = document.querySelector('body');
-const hex = document.querySelector('.hex');
-
-hexbutton.addEventListener('click',getHex);
-
-function getHex(){
-
-    let hexcolor = '#';
-
-    // random number generator for hex color value
-    for(let i=0; i<6; i++){
-        let random = Math.floor(Math.random()*hexnumbers.length);
-        hexcolor+=hexnumbers[random];
-        console.log(hexcolor);
-        
+    {
+        name:'author number 1',
+        quote:'quote number 1'
+    },
+    {
+        name:'author number 2',
+        quote:'quote number 2'
+    },
+    {
+        name:'author number 3',
+        quote:'quote number 3'
+    },
+    {
+        name:'author number 4',
+        quote:'quote number 4'
     }
-    body.style.backgroundColor=hexcolor;
-    //variable which shows # hex value of color
-    hex.innerHTML=hexcolor;
+]
+
+const quotebutton = document.querySelector('#quotebutton');
+const quoteAuthor = document.querySelector('#quoteAuthor');
+const quote = document.querySelector('#quote');
+
+quotebutton.addEventListener('click', quoteDisplay);
+
+function quoteDisplay(){
+
+    let num=Math.floor(Math.random()*simpleQuotes.length);
+    //console.log(num)
+    
+    //calling for name & quote from our array
+
+    quoteAuthor.innerHTML=simpleQuotes[num].name;
+    quote.innerHTML=simpleQuotes[num].quote;
 }
+

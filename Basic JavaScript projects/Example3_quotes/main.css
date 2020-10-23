@@ -3,30 +3,46 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #ffd0a8;
+    color: #333;
+    font-family: 'calibri', sans-serif;
+    font-weight: 400;   
+    text-transform: capitalize;
 }
 
 .container{
     text-align: center;
-
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #fff;
+    flex:0 0 80%;
 }
 
-.hexcolor{
-    text-transform: capitalize;
-}
-.hex{
-    font-size: 3rem;
-}
-.buttoncolor{
-    color: #f15025;
-    border: 3px solid #f15025;
-    border-radius: 7px;
-    background: rgba(0, 0, 0, 0.6);
-    font-size: 1.6rem;
+#quotebutton{
+    border: none;
+    color:#fff;
+    background: #d89156;
+    font-size: 1.3rem;
     padding: 0.25rem 0.5rem;
-    cursor: pointer;
-    outline: none;
-    text-transform: capitalize;
+    border-radius: 7px;
+    cursor: help;
+
 }
-.buttoncolor:hover{
-    background: rgba(0,0,0);
+
+#quotebutton:hover
+{
+    color: #ffd000;
+
+}
+
+blockquote{
+    background: #f9f9f9;
+    border-left: 10px solid #fcdbbf;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    
+}
+
+#quoteAuthor{
+    color: #ffd000;
 }
