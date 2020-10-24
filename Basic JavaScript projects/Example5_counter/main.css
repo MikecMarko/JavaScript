@@ -1,61 +1,46 @@
 body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #88d589;
-    color: #333;
-    font-family: 'calibri', sans-serif;
-    font-weight: 400;
-    text-transform: capitalize;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+/*background: url('Photo/For project image.jfif');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;*/
+background: url('Photo/For project image.jfif')center/cover no-repeat;
+color: white;
+font-family: Arial, Arial, Helvetica, sans-serif;
+font-weight: bold;
+text-transform: uppercase;
 }
 
-.container{
+.counter-box{
+    flex:0 0 70%;
+    font-weight: bold;
     text-align: center;
-    padding: 2rem;
-    border-radius: 2px;
-    background: #fff;
-    /*for container to always be 80% of screen*/
-    flex:0 0 80%;
+    border: 8px solid green;
+    padding: 1rem;
+    box-shadow: 3px 3px 10px 10px red;
 }
 
-button{
-    display: block;
+.counter{
+    font-size: 6rem;
+}
+
+.button{
+    background-color: gray;
+    border-radius: 10px;
     font-size: 2rem;
-    /*margin 1rem top and button, left and right auto*/
-    margin: 1rem auto;
-    /*padding 0.5rem top and button, left and right 1rem*/
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background: #6cc3d7;
-    border-radius: 9px;
-    border: none;
-    text-transform: capitalize;
+    padding: 0.5rem;
+    margin: 0.5rem 0.25rem;
+    border: red 3px solid;
+    box-shadow: 0px 6px green;
+    outline: none;
 }
-button:hover{
-    opacity: 0.7;
-    cursor: pointer;
+.button:hover{
+    background-color: green;
+    color:wheat;
 }
-
-input[type=text]{
-padding: 0.5rem;
-/*all arround 1rem top bottom left right*/
-margin: 1rem;
-border-radius: 5px;
-font-size: 1.5rem;
-/*border color does not apply to thick */
-border: 6px solid #88d5e9;
-outline: none;
-}
-
-/*adding of box shadow, we add on focus so we know when we have selected it*/
-input[type=text]:focus{
-    /*horizontal vertical and blur*/
-    box-shadow: 0 0 10px #88d5e9;
-
-}
-
-#messageOut{
-margin: 0.5rem 0;
-color:   #88d5e9;
+.button:active{
+    box-shadow: none;
 }
