@@ -1,0 +1,56 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('Photo/background.jfif')center/cover no-repeat;
+
+}
+
+.images{
+    background: yellow;
+    flex: 0 0 80%;
+    min-height: 70vh;
+    background: url('Photo/Photo_0.jpg')center/cover no-repeat;
+    border-radius: 15px;
+    /*bottom and right*/
+    box-shadow: 5px 10px black;
+    position: relative;
+    }
+
+    /*it calls it self on one part of classs in button*/
+
+.button{
+    display: inline-block;
+    background: white;
+    color: black;
+    border: 3px solid green;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 20%;
+    box-shadow:  2px 5px black;
+    outline: none;}
+
+.prevButton{
+    position: absolute;
+    top:50%;
+    left:0;
+    /*we use translate to move then button bothways 50% left and top*/
+    transform: translate(-50%,-50%);
+}
+.nextButton{
+    position: absolute;
+    top:50%;
+    right:0;
+    /*we use translate to move then button bothways 50% left and top*/
+    transform: translate(50%,-50%);
+}
+
+.button:active{
+    background: gray;
+    box-shadow: 1px 1px gray;
+}
+.button:hover{
+    background:green;
+    color: white;
+}
