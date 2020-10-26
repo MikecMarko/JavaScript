@@ -12,10 +12,15 @@ for(let i=0;i<btns.length;i++){
 
     });
 }
-
+//Here we have functions written as we use them not separately 
 equal.addEventListener('click',function(){
+    if(show.value =='')
+    {
+        alert('Input is empty');
+    }
+    else{
     let value = eval(show.value);
-    show.value = value;
+    show.value = value;}
 });
 
 clear.addEventListener('click',function(){
