@@ -1,0 +1,74 @@
+/* * means we target everything*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar_header{
+    background:#545454;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 0.3rem solid #6baa75;
+}
+
+.navbar_button{
+    border:5px solid #6baa75;
+    cursor:pointer;
+    align-self: center;
+}
+
+.bar1,.bar2,.bar3{
+
+    width: 30px;
+    height: 5px;
+    margin: 0.5rem;
+    background: #6baa75;
+    transition: all 1.5s ease;
+}
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-10px, 10px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.navbar_links{
+    list-style-type: none;
+    transition: all 1.5s ease;
+    /**/
+    height: 0;
+    overflow: hidden;
+}
+
+.navbar_collapse{
+    height:240px;
+}
+.navbar_singlelink{
+    display: block;
+    background: #69747c;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #6baa75;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.navbar_singlelink:hover{
+    padding-left: 1.5rem;
+    background: #545454;
+}
+
+header{
+    min-height: calc(100vh - 91.8px);
+    background: url('./img/header.JPG')center/cover no-repeat;
+
+}
