@@ -2,8 +2,7 @@ const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 const navLogo = document.querySelector('#navbar__logo');
 
-//Display Mobile Menu
-
+// Display Mobile Menu
 const mobileMenu = () => {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
@@ -11,17 +10,16 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu);
 
-//Show active menu when scrolling
-
+// Show active menu when scrolling
 const highlightMenu = () => {
-  const element = document.querySelector('.highlight');
+  const elem = document.querySelector('.highlight');
   const homeMenu = document.querySelector('#home-page');
   const aboutMenu = document.querySelector('#about-page');
   const servicesMenu = document.querySelector('#services-page');
-
   let scrollPos = window.scrollY;
+  // console.log(scrollPos);
 
-  // highlights to menu items
+  // adds 'highlight' class to my menu items
   if (window.innerWidth > 960 && scrollPos < 600) {
     homeMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
@@ -37,18 +35,15 @@ const highlightMenu = () => {
     return;
   }
 
-  if ((element && window.innerWidth < 960 && scrollPos < 600) || element) {
-    element.classList.remove('highlight');
+  if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
+    elem.classList.remove('highlight');
   }
 };
 
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
 
-// we can use console.log(scrollPos) to track where certain areas end or start.
-
-//Closing of mobile menu when selecting an item
-
+//  Close mobile Menu when clicking on a menu item
 const hideMobileMenu = () => {
   const menuBars = document.querySelector('.is-active');
   if (window.innerWidth <= 768 && menuBars) {
