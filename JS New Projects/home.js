@@ -41,6 +41,9 @@ console.log(sum);
 */
 }
 
+{
+  /*
+
 //CHAPTER 3  ==> Functions
 
 function example() {
@@ -49,14 +52,13 @@ function example() {
 //Calling a function
 //example();
 
-function example2() {
-  var name = prompt('What is your name');
+function example2(myName) {
   //concatenation of string
-  var result = 'Hello' + ' ' + name;
+  var result = 'Hello' + ' ' + myName;
   console.log(result);
 }
-
-//example2();
+var name = prompt('What is your name');
+example2(name);
 
 //functions with argument
 
@@ -67,3 +69,26 @@ function withArgument(a, b) {
 
 //if we use the funciton to connect the strings, it will connect them not add them.
 withArgument(6, 3);
+
+*/
+}
+
+{
+  /**
+// CHAPTER 4 LOOPS
+//WHILE
+let num = 0;
+while (num < 100) {
+  num += 1;
+  console.log(num);
+}
+//FOR
+for (let num = 1; num < 100; num += 1) {
+  console.log(num);
+}
+*/
+}
+
+//CHAPTER 5
+
+//DATA TYPES
