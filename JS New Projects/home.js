@@ -65,4 +65,5 @@ function withArgument(a, b) {
   console.log(sum);
 }
 
+//if we use the funciton to connect the strings, it will connect them not add them.
 withArgument(6, 3);
