@@ -27,7 +27,7 @@ document.getElementById('paragraph').textContent = age;
 
 {
   /* 
-//CHAPTER 2 ==> numbers
+//CHAPTER 2 ==> Numbers
 
 var num1 = 5;
 var num2 = 5.5;
@@ -42,3 +42,27 @@ console.log(sum);
 }
 
 //CHAPTER 3  ==> Functions
+
+function example() {
+  alert('This is a function?');
+}
+//Calling a function
+//example();
+
+function example2() {
+  var name = prompt('What is your name');
+  //concatenation of string
+  var result = 'Hello' + ' ' + name;
+  console.log(result);
+}
+
+//example2();
+
+//functions with argument
+
+function withArgument(a, b) {
+  let sum = a + b;
+  console.log(sum);
+}
+
+withArgument(6, 3);
