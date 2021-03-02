@@ -92,3 +92,15 @@ for (let num = 1; num < 100; num += 1) {
 //CHAPTER 5
 
 //DATA TYPES
+
+//CHAPTER 6 ==> STRINGS IN JAVASCRIPT
+
+let fruit = 'banana';
+let moreFruits = 'banana\napple';
+console.log(moreFruits);
+console.log(moreFruits.length);
+console.log(moreFruits.slice(2, 3));
+console.log(moreFruits.replace('ban', 'nab'));
+console.log(moreFruits.toUpperCase(fruit));
+console.log(moreFruits.charAt(2));
+console.log(fruit.split(''));
