@@ -104,3 +104,16 @@ console.log(moreFruits.replace('ban', 'nab'));
 console.log(moreFruits.toUpperCase(fruit));
 console.log(moreFruits.charAt(2));
 console.log(fruit.split(''));
+
+let array = ['car', 'house', 'vacation', 'child'];
+
+// or
+
+array1 = new Array('cars', 'houses', 'vacations', 'children');
+
+array[0] = 'porsche';
+alert(array[0]);
+
+for (let i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
