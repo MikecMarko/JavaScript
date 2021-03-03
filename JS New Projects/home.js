@@ -112,8 +112,16 @@ let array = ['car', 'house', 'vacation', 'child'];
 array1 = new Array('cars', 'houses', 'vacations', 'children');
 
 array[0] = 'porsche';
-alert(array[0]);
+//alert(array[0]);
 
 for (let i = 0; i < array.length; i++) {
   console.log(array[i]);
 }
+
+//common methods
+
+let emptyArray = new Array();
+for (let num = 0; num < 10; num++) {
+  emptyArray.push(num);
+}
+console.log(emptyArray);
