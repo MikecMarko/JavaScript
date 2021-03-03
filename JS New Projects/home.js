@@ -93,7 +93,9 @@ for (let num = 1; num < 100; num += 1) {
 
 //DATA TYPES
 
-//CHAPTER 6 ==> STRINGS IN JAVASCRIPT
+{
+  /* 
+//CHAPTER 6 ==> STRINGS and ARRAYS IN JAVASCRIPT
 
 let fruit = 'banana';
 let moreFruits = 'banana\napple';
@@ -124,4 +126,7 @@ let emptyArray = new Array();
 for (let num = 0; num < 10; num++) {
   emptyArray.push(num);
 }
-console.log(emptyArray);
+console.log(emptyArray);*/
+}
+
+//OBJECTS IN JS
