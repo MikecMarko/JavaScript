@@ -130,3 +130,13 @@ console.log(emptyArray);*/
 }
 
 //OBJECTS IN JS
+let student = {
+  first: 'Marko',
+  last: 'Mikec',
+  age: 26,
+  height: 186,
+  studentInfo: function () {
+    return this.first + '\n' + this.last;
+  },
+};
+console.log(student.studentInfo());
