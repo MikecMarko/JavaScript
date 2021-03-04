@@ -129,6 +129,8 @@ for (let num = 0; num < 10; num++) {
 console.log(emptyArray);*/
 }
 
+{
+  /*
 //OBJECTS IN JS
 let student = {
   first: 'Marko',
@@ -140,3 +142,17 @@ let student = {
   },
 };
 console.log(student.studentInfo());
+
+*/
+}
+
+//CONDITIONALS, CONTROL FLOWS IF ELSEIF SWITCH
+
+let age = prompt('What is your age');
+
+if (age >= 18 && age <= 25) {
+  status = 'target demo';
+} else {
+  status = 'notmyaudience';
+}
+console.log(status);
