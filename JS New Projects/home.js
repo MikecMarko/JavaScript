@@ -156,3 +156,23 @@ if (age >= 18 && age <= 25) {
   status = 'notmyaudience';
 }
 console.log(status);
+
+//Switch
+
+let number = 45;
+
+switch (number) {
+  case 0:
+    text = 'Weekend';
+    break;
+  case 5:
+    text = 'Weekend';
+    break;
+  case 6:
+    text = 'Weekend';
+    break;
+  default:
+    text = 'Weekday';
+}
+
+console.log(text);
