@@ -9,7 +9,7 @@
   <body>
     <p id="paragraph"></p>
     <script>
-      let people = [
+      let people = `[
         {
           name: 'Marko',
           age: 25,
@@ -19,12 +19,13 @@
           name: 'Roko',
           age: 35,
           height: 192,
-        },
-      ];
-      console.log(people);
+        }
+      ]`;
+      let parsedData = JSON.parse(people);
+      console.log(parsedData);
     </script>
 
-    <p id="paragraph"></p>
+    <p id="paragraph">P</p>
     <!--<script src="home.js"></script>-->
   </body>
 </html>
