@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  padding: 5px;
+}
+.container__name {
+  text-align: center;
+  text-transform: uppercase;
+  border: solid 1px black;
+  margin-bottom: 5px;
+  background-color: forestgreen;
+}
+
+.container__buttons {
+  display: flex;
+  padding: 5px;
+  border: solid 1px black;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container__button {
+  background-color: #4caf50; /* Green */
+  border: 2px black solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+.container__button:hover {
+  background-color: darkgreen;
+  color: azure;
+}
